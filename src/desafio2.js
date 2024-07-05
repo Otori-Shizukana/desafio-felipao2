@@ -1,12 +1,13 @@
-let vitorias = 0
+let vitorias = 10
 let derrotas = 0
-
 
 function analisandoRanque(vitorias, derrotas){
     let calculo = vitorias - derrotas
     return calculo
 }
+
 let saldoVitorias = analisandoRanque(vitorias, derrotas)
+
 function patentes(patente){
     while(patente <= 0){
         console.log(`Jogador muito ruim tem saldo de ${patente}, não pode ser classificado em nenhuma rank, por favor melhore suas habilidades para ser classificado.`)
@@ -30,8 +31,5 @@ function patentes(patente){
     }
     console.log(`O Herói tem de saldo de ${saldoVitorias}, está nível de ${classificao}`)
 }
-let saldoPatentes = patentes(saldoVitorias)
 
-
-
-
+patentes(saldoVitorias)
